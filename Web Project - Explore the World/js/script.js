@@ -12,7 +12,8 @@ $(function() {
 	$(window).resize(function() {
 		var w = $(this).width();
 		if(w > 580 && menu.is(':hidden')) {
-			menu.RemoveAttr('style');
+			menu.show();
+			menu.removeAttr('style');
 		}
 	});
 	
@@ -21,8 +22,7 @@ $(function() {
 		if(w < 580) {
 			menu.slideToggle();
 		}
-	});
-	
+	}); 
 });
 
 //SCROLABLE MENU
@@ -85,7 +85,7 @@ function carousel() {
 
 //MAKE VIEW MORE BUTTON
 
-function myFunction() {
+function viewMoreFunction() {
   var x = document.getElementById("more");
   var btnText = document.getElementById("moreBtn");
   if (x.style.display === "block") { 
@@ -97,7 +97,44 @@ function myFunction() {
   }
 }
   
-  
+//POP-UP WINDOW
+
+// Get the modal
+function modalFunction(m)
+{
+	var modal = document.getElementById("myModal" + m);
+	//var cntBtn = document.getElementsByClassName("btn_image").length;
+
+	// Get the button that opens the modal
+	var btn = document.getElementsByClassName("btn_image")[parseInt(m)];
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[parseInt(m)];
+
+	// When the user clicks the button, open the modal 
+	btn.onclick = function() {
+	  modal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+		modal.style.display = "none";
+	  }
+	}
+}
+
+
+//}
+
+
+
+
   
   
   

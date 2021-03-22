@@ -4,23 +4,32 @@
 	    <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="Plan your next summer destination, explore the most beautiful cities and beach views, experience new adventures, different cultures, nationalities and food. Here you will get to know the world and make your dreams come true!"> <!--- 217 characters -->
+		<meta name="keywords" content="summer,world,enjoy,explore,experience,hot,destination,beautiful,best,views,exotic,places,waves,surf,island,nature,sea,ocean,city,sun,beach,cocktails,swimsuit,
+		swim,fishes,life,adventures,cultures,friends,unforgettable,dream"><!--- 186 characters -->
+		<meta name="robots" content="index"> <!-- which pages search engine should be indexed-->
 		
-		<title>Explore the world</title>
+		<title>Enjoy your summer</title>
+		
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
 		
 		<!-- css -->
+		
 		<link href="css/stylesheet.css" rel="stylesheet" type="text/css"/>
 		
 		<!-- google fonts -->
-		
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 		
-		<!-- jquery -->
+		<!-- font awesome icons -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<!-- jquery -->
 		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 		
-		<!-- font awesome icons -->
-		
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	
 	</head>
 	
 	<body>
@@ -50,60 +59,187 @@
 		<div class="section-hero" id="home">
 			<div class="container">
 				<br><br><br><br>
-				<h2><i class="fa fa-camera" aria-hidden="true"></i><span class="">Explore the world</span></h2>
-				<p>A world full of wonders. Cities and nature. Get inspired and capture the moment! </p>
+				<h1><i class="fa fa-camera" aria-hidden="true"></i><span class="">Explore the best summer destinations</span></h1>
 				<br>
-				<img class="slides" src="images/overview3.jpg" alt="nature">
-				<img class="slides" src="images/overview4.jpg" alt="nature">
-				<img class="slides" src="images/overview2.jpg" alt="nature">
-				<br>
+				<img class="slides" src="images/sea-exotic-island.jpg" alt="exotic sea island">
+				<img class="slides" src="images/sea-view-from-above.jpg" alt="sea view from above">
+				<img class="slides" src="images/surf-ocean-waves.jpg" alt="surfist ocean waves">
 				<br>
 			</div>
 		</div>
 		
 		<!-- overview section -->
 		
-		<div id="overview" class="section">
+		<div id="overview" class="overview-section">
 			<div class="container">
-				<h2>Overview</h2>
-				<h4>Choose a place you want to discover</h4>
+				<h1><br></br>Overview</h1>
+				<p>A world full of wonders. Explore the sea life. Get inspired and capture the moment! 
+				<br>You believe that everything is better on the beach.<br>You want to find new beautiful places all over the world where the sun does not stop to shine. <br>To learn how to surf, to ride a jet ski, to drink cocktails and to enjoy the good weather with friends. <br>Then you are on the right place!<br>Here you can find everything about summer and choose your next best summer destination. <br>Don't wait and start to surf the Web so you can surf on the waves as soon as possible.</br></p>
+				<h3>Choose a place you want to discover</h3>
 				<br>
 				<div>
-					<img class="img_overview" src="images/overview.jpg" alt="nature">
-					<button class="btn_image">Explore</button>
-					<img class="img_overview" src="images/overview2.jpg" alt="nature">
-					<button class="btn_image">Explore</button>
-					<img class="img_overview" src="images/overview3.jpg" alt="nature">
-					<button class="btn_image">Explore</button>
-					<img class="img_overview" src="images/overview4.jpg" alt="nature">
-					<button class="btn_image">Explore</button>
-					<img class="img_overview" src="images/overview.jpg" alt="nature">
-					<button class="btn_image">Explore</button>
-					<img class="img_overview" src="images/overview2.jpg" alt="nature">
-					<button class="btn_image">Explore</button>
+					<img class="img_overview" src="images/chania-crete.jpg" alt="nature">
+					<button class="btn_image" onclick="modalFunction(0);">Explore</button>
+					<!--Chania, Crete-->
+					<div id="myModal0" class="modal">
+					  <!-- Modal content -->
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <span class="close">&times;</span>
+						  <h2>Chania, Crete</h2>
+						</div>
+						<div class="modal-body">
+						  <img class="img_overview" src="images/chania-crete.jpg" alt="chania island crete" style="max-height:100px; width: auto; float:left;">
+						  <p style="text-align: justify; "><b>Chania</b> is a city located in West Crete and one of the most picturesque villages on the island. Its beautiful nature, lively harbor, historical landmarks, the market full of goods and people, the interesting museums and beaches around it make it the perfect resort. One of the most popular landmarks is the port's Venetian lighthouse, the Archeological and Naval Museum. One of the must-try is the local food, which is known as one of the most delicious in the world.</p>
+						</div>
+					  </div>
+					</div>	
+					<img class="img_overview" src="images/bali-indonesia.jpg" alt="bali beach indonesia">
+					<button class="btn_image" onclick="modalFunction(1)">Explore</button>
+					<!--Bali, Indonesia-->
+					<div id="myModal1" class="modal">
+					  <!-- Modal content -->
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <span class="close">&times;</span>
+						  <h2>Bali, Indonesia</h2>
+						</div>
+						<div class="modal-body">
+						  <img class="img_overview" src="images/bali-indonesia.jpg" alt="bali beach indonesia" style="max-height:100px; width: auto; float:left;">
+						  <p style="text-align: justify; "> <b>Bali</b> is a tropical island in Indonesia. It is rich in culture, history, dance, sculpture and painting. Bali is considered one of the most beautiful places in the world because of its beautiful nature, beaches and tropical climate. With its more than thousands of temples, Bali is also known as the "Islands of the Thousand Temples."</p>
+						</div>
+					  </div>
+					</div>	
+					<img class="img_overview" src="images/sydney-australia.jpg" alt="sydney pool australia">
+					<button class="btn_image" onclick="modalFunction(2)">Explore</button>
+					<!--Sydney, Australia-->
+					<div id="myModal2" class="modal">
+					  <!-- Modal content -->
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <span class="close">&times;</span>
+						  <h2>Sydney, Australia</h2>
+						</div>
+						<div class="modal-body">
+						  <img class="img_overview" src="images/sydney-australia.jpg" alt="sydney pool australia" style="max-height:100px; width: auto; float:left;">
+						  <p style="text-align: justify; "><b>Sydney</b> is the largest and oldest city in Australia and is located in New South Wales. There are many historic buildings in Sydney with the status of cultural monuments. Bonday Beach is a famous beach that has become the most popular surf spot around Sydney. The Surf Fun Run is held here every year, with its end point reaching the beach.</p>
+						</div>
+					  </div>
+					</div>	
+					<img class="img_overview" src="images/hawaii-usa.jpg" alt="hawaii palms usa">
+					<button class="btn_image" onclick="modalFunction(3)">Explore</button> 
+					<!--Hawaii, USA-->
+					<div id="myModal3" class="modal">
+					  <!-- Modal content -->
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <span class="close">&times;</span>
+						  <h2>Hawaii, USA</h2>
+						</div>
+						<div class="modal-body">
+						  <img class="img_overview" src="images/hawaii-usa.jpg" alt="hawaii palms usa" style="max-height:100px; width: auto; float:left;">
+						  <p style="text-align: justify; "><b>Hawaii</b> is one of the most exotic places in the world. Due to the presence of coral reefs, the waters of the beaches are transparent and always calm, and the beach is strewn with numerous palm trees and greenery, among which are many hotels and restaurants. This is why Hawaii is still one of the top destinations in the world.</p>
+						</div>
+					  </div>
+					</div>	
+					<img class="img_overview" src="images/amalfy-coast-italy.jpg" alt="amalfy coast italy">
+					<button class="btn_image" onclick="modalFunction(4)">Explore</button>
+					<!--Amalfi, Italy-->
+					<div id="myModal4" class="modal">
+					  <!-- Modal content -->
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <span class="close">&times;</span>
+						  <h2>Amalfi, Italy</h2>
+						</div>
+						<div class="modal-body">
+						  <img class="img_overview" src="images/amalfy-coast-italy.jpg" alt="amalfy coast italy" style="max-height:100px; width: auto; float:left;">
+						  <p style="text-align: justify; "><b>Amalfi</b> is one of the most fabulous places in Italy. In Amalfi you can explore a world of adventure, beauty and style, enjoying the sandy and rocky beaches, history and beautiful scenery. Amalfi can definitely be called must-see destination.</p>
+						</div>
+					  </div>
+					</div>	
+					<img class="img_overview" src="images/nessebar-bulgaria.jpg" alt="nessebar mill black sea bulgaria">
+					<button class="btn_image" onclick="modalFunction(5)">Explore</button>
+					<!--Nessebar, Bulgaria-->
+					<div id="myModal5" class="modal">
+					  <!-- Modal content -->
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <span class="close">&times;</span>
+						  <h2>Nessebar, Bulgaria</h2>
+						</div>
+						<div class="modal-body">
+						  <img class="img_overview" src="images/nessebar-bulgaria.jpg" alt="nessebar mill black sea bulgaria" style="max-height:100px; width: auto; float:left;">
+						  <p style="text-align: justify; "> <b>Nessebar</b> is a city located in southeastern Bulgaria. It is an ancient city with a rich history. The city was declared an architectural and archaeological reserve. The Old Town has preserved valuable historical monuments. The new part of the city is characterized by modern architecture, has a wide variety of accommodation, restaurants, discos. The city has wonderful views that should not be missed</p>
+						</div>
+					  </div>
+					</div>	
 					<div id="more">
-						<img class="img_overview" src="images/overview.jpg" alt="nature">
-						<button class="btn_image">Explore</button>
-						<img class="img_overview" src="images/overview2.jpg" alt="nature">
-						<button class="btn_image">Explore</button>
-						<img class="img_overview" src="images/overview2.jpg" alt="nature">	
-						<button class="btn_image">Explore</button>
+						<img class="img_overview" src="images/splitas-croatia.png" alt="splitas croatia coast fortress">
+						<button class="btn_image" onclick="modalFunction(6)">Explore</button>
+						<!--Splitas, Croatia-->
+						<div id="myModal6" class="modal">
+						  <!-- Modal content -->
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <span class="close">&times;</span>
+							  <h2>Splitas, Croatia</h2>
+							</div>
+							<div class="modal-body">
+							  <img class="img_overview" src="images/splitas-croatia.png" alt="splitas croatia coast fortress" style="max-height:100px; width: auto; float:left;">
+							  <p style="text-align: justify; "><b>Split</b> is the second largest city in Croatia and is located on the coast of Dalmatia. There is a plenty of beautiful views of the Adriatic Sea and the Mediterranean spirit of the city. In Split you can see some of the most beautiful Roman monuments - the Palace of Diocletian is declared by UNESCO as a World Heritage Site.</p>
+							</div>
+						  </div>
+						</div>	
+						<img class="img_overview" src="images/bolata-coast-bulgaria.jpg" alt="bolata coast bulgaria">
+						<button class="btn_image" onclick="modalFunction(7)">Explore</button>
+						<!--Bolata, Bulgaria-->
+						<div id="myModal7" class="modal">
+						  <!-- Modal content -->
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <span class="close">&times;</span>
+							  <h2>Bolata, Bulgaria</h2>
+							</div>
+							<div class="modal-body">
+							  <img class="img_overview" src="images/bolata-coast-bulgaria.jpg" alt="bolata coast bulgaria" style="max-height:100px; width: auto; float:left;">
+							  <p style="text-align: justify; "> 
+							  <b>Bolata</b> is a small and beautiful bay on the Bulgarian Black Sea coast. Bolata is also part of the Most Beautiful Bay in the World club. Because the water is clear, the place is calm. Many species of fish are found in the bay. Nearby are quite rocky and underwater caves, where remains of ancient settlements and evidence of life dating back four hundred years BC have been found.</p>
+							</div>
+						  </div>
+						</div>	
+						<!--Costa Brava, Spain-->
+						<img class="img_overview" src="images/costa-brava-spain.jpg" alt="costa brava spain city view">	
+						<button class="btn_image" onclick="modalFunction(8)">Explore</button>
+						<div id="myModal8" class="modal">
+						  <!-- Modal content -->
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <span class="close">&times;</span>
+							  <h2>Costa Brava, Spain</h2>
+							</div>
+							<div class="modal-body">
+							  <img class="img_overview" src="images/costa-brava-spain.jpg" alt="costa brava spain city view" style="max-height:100px; width: auto; float:left;">
+							  <p style="text-align: justify; "> <b>Costa Brava</b> is a great place to relax and have fun. The area is rich in tourist attractions, has an incredible culture and can enjoy a variety of culinary temptations, as well as discover the preserved traditions associated with many celebrations and holidays, because the Spaniards love the fun events.</p>
+							</div>
+						  </div>
+						</div>				
 					</div>
 				</div>
-				<button onclick="myFunction()" type="button" id="moreBtn">View more</button>		
+				<button onclick="viewMoreFunction()" type="button" id="moreBtn">View more</button>
 			</div>
 		</div>
 		
 		<!-- feature section -->
 		
-		<div id="feature" class="section">
+		<div id="feature" class="feature-section">
 			<div class="container">
-				<h2>
+				<h1>
 					<i class="fa fa-camera"></i>capture your memories
-				</h2>
-				<h3>Share your memories with us to username@mail.com.</h2>
-				<p>You are a passionate traveler and like to take photos of beautiful places. Sent us photos of your trip adventures and we will publish them.</p>
-				<img class="img_feature" src="images/overview4.jpg" alt="nature">
+				</h1>
+				<h3>Share your memories with us!</h2>
+				<p>You are a passionate traveler and like to take photos of beautiful places.<br> Sent us photos of your trip adventures and we will publish them.</p>
+				<img class="img_feature" src="images/sea-view-from-above.jpg" alt="sea view from above">
 			</div>
 		</div>	
 			
@@ -114,12 +250,15 @@
 			<div class="container">
 				<div class="about-content">
 					<div id="subscribe" class="section">
-							<h2>Subscribe to our newsletter</h2>
-							<h3>Keep exploring!</h3>
-							<p>Don't miss to get notify when there is a new post.</p>
+							<h1>Subscribe to our newsletter</h1>
+							<h3>Don't miss to get notify when there is a new post.</h3>
 							<input type="text" placeholder="Enter your email">
 							<br>
 							<button type="button">Notify me</button>
+							<h3>Find us on: 
+								<a href="" class="icon-block"><i class="fa fa-facebook"></i></a>
+								<a href="https://www.instagram.com/thewaworld/" class="icon-block"><i class="fa fa-instagram"></i></a>
+							</h3>
 					</div>
 				</div>
 			</div>
@@ -127,7 +266,7 @@
 		
 
 		<footer>
-			<p> Created by Teya Andreeva</p>
+			<p><p>&copy; 2020 Teya Andreeva<p></p>
 		</footer>
 		
 		<script src = "js/script.js"></script>
